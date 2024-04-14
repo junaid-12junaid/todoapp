@@ -12,7 +12,9 @@ app.use(cors({
 
 app.use("/",todoRoute)
 
-mongoose.connect("mongodb+srv://Junaid:OmiBBhzoWGFH0BY0@cluster0.axj9x.mongodb.net/todo-app").then(()=>{
+
+
+mongoose.connect("").then(()=>{
     console.log("the db is connected")
 }).catch(err=>console.log((err)))
 
